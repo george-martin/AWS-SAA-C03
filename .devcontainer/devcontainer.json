@@ -1,5 +1,8 @@
 {
   "name": "Codespace with AWS CLI",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-  "postCreateCommand": ".devcontainer/post-create.sh"
+  "postCreateCommand": ".devcontainer/post-create.sh",
+  "remoteEnv": {
+    "AWS_CLI_AUTO_PROMPT": "on-partial"
+  }
 }
